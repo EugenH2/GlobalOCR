@@ -14,7 +14,7 @@ using namespace cv::dnn;
 #include "DataLoader.h"
 
 
-//#pragma comment(lib, "gdiplus.lib")  //Add to the linker here or via Project Properties 
+#pragma comment(lib, "gdiplus.lib")  //Add to the linker here or via Project Properties 
 #pragma comment(lib, "comctl32.lib")   //Add to the linker here or via Project Properties
 #if defined _M_IX86
 #pragma comment(linker,"/manifestdependency:\"type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='x86' publicKeyToken='6595b64144ccf1df' language='*'\"")
