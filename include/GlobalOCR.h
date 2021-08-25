@@ -18,7 +18,7 @@ int wDesktopResolution = GetSystemMetrics(SM_CXVIRTUALSCREEN);
 int hDesktopResolution = GetSystemMetrics(SM_CYVIRTUALSCREEN);
 std::string recognizedWords;
 
-// Vorwärtsdeklarationen der in diesem Codemodul enthaltenen Funktionen:
+// VorwÃ¤rtsdeklarationen der in diesem Codemodul enthaltenen Funktionen:
 ATOM                MyRegisterClass(HINSTANCE hInstance);
 BOOL                InitInstance(HINSTANCE, int);
 LRESULT CALLBACK    WndProc(HWND, UINT, WPARAM, LPARAM);
@@ -86,7 +86,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
  2. Download the Text Recognition Model from here: https://drive.google.com/file/d/1JPIhUeXldbUGrTuYt_Y2_MuUyQU7bDZ2/view?usp=sharing and add it to the folder ModelRecognition:\n\
  3. Download the Vocabulary File from here: https://drive.google.com/uc?export=dowload&id=1oPOYx5rQRp8L6XQciUwmwhMCfX0KyO4b and add it to the folder ModelRecognition:\n\
  4. Restart the application.\n\n\
- The Textdetection Model is for locating Words. Then the Textrecognizion Model uses the located words and recognizes the letters of the words.\n\
+ The Text Detection Model is for locating Words. Then the Text Recognition Model uses these located words and recognizes the letters of the words.\n\
  And the Vocabulary is for encoding the classifications, which stand for a letter representation.\n\n\n\n\n\n\n\n\n\
  Hotkeys:\n F2: for pausing/resuming the application\n\
  F3: for copying to clipboard, from where it can be inserted in another application e.g. with \"Ctrl/Strg + v\" or \"right mouse-click + paste\" in notepad\n\
@@ -205,11 +205,11 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 //
 //  FUNKTION: WndProc(HWND, UINT, WPARAM, LPARAM)
 //
-//  ZWECK: Verarbeitet Meldungen für das Hauptfenster.
+//  ZWECK: Verarbeitet Meldungen fÃ¼r das Hauptfenster.
 //
-//  WM_COMMAND  - Verarbeiten des Anwendungsmenüs
+//  WM_COMMAND  - Verarbeiten des AnwendungsmenÃ¼s
 //  WM_PAINT    - Darstellen des Hauptfensters
-//  WM_DESTROY  - Ausgeben einer Beendenmeldung und zurückkehren
+//  WM_DESTROY  - Ausgeben einer Beendenmeldung und zurÃ¼ckkehren
 //
 //
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
@@ -249,7 +249,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     case WM_COMMAND:
     {
         int wmId = LOWORD(wParam);
-        // Menüauswahl analysieren:
+        // MenÃ¼auswahl analysieren:
         switch (wmId)
         {
         case IDB_OPENFILE1: //Open file Button 1
@@ -288,7 +288,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     {
         PAINTSTRUCT ps;
         BeginPaint(hWnd, &ps);
-        // TODO: Zeichencode, der hdc verwendet, hier einfügen...
+        // TODO: Zeichencode, der hdc verwendet, hier einfÃ¼gen...
         EndPaint(hWnd, &ps);
     }
     break;
@@ -302,7 +302,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     return 0;
 }
 
-// Meldungshandler für Infofeld.
+// Meldungshandler fÃ¼r Infofeld.
 INT_PTR CALLBACK About(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
 {
     UNREFERENCED_PARAMETER(lParam);
@@ -413,7 +413,7 @@ LRESULT CALLBACK LayeredWndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM l
     {
         PAINTSTRUCT ps;
         BeginPaint(hwnd, &ps);
-        // TODO: Zeichencode, der hdc verwendet, hier einfügen...
+        // TODO: Zeichencode, der hdc verwendet, hier einfÃ¼gen...
         EndPaint(hwnd, &ps);
         break;
     }
