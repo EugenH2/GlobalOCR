@@ -104,7 +104,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
     ::SendMessage(hwndEdit, EM_AUTOURLDETECT, TRUE, NULL);
 
 
-    //Create 2 buttons for open folder of the instrunction
+    //Create 2 buttons for open folder of the instruction
     HWND hwndOpenFileButton1 = CreateWindow(
         L"BUTTON",  // Predefined class; Unicode assumed 
         L"Open Folder",      // Button text 
