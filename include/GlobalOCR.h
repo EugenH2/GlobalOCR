@@ -367,7 +367,7 @@ LRESULT CALLBACK LayeredWndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM l
         {
             if (!bAThreadSwitchedOff)
             {
-                bAThreadSwitchedOff = 1;//Let the Alphathread end himself
+                bAThreadSwitchedOff = 1;//Let the Alphathread end itself
                 if (bAThreadSuspended)
                 {
                     ResumeThread(h_tAlpha);
