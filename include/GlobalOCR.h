@@ -87,7 +87,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
  3. Download the Vocabulary File from here: https://drive.google.com/uc?export=dowload&id=1oPOYx5rQRp8L6XQciUwmwhMCfX0KyO4b and add it to the folder ModelRecognition:\n\
  4. Restart the application.\n\n\
  The Text Detection Model is for locating words. Then the Text Recognition Model uses these located words and recognizes the letters of the words.\n\
- And the Vocabulary is for decoding the classifications, which stand for a letter representation.\n\n\n\n\n\n\n\n\n\
+ And the Vocabulary is for decoding the classifications, which stand for a letter representation. (Loss function: CTC)\n\n\n\n\n\n\n\n\n\
  Hotkeys:\n F2: for pausing/resuming the application\n\
  F3: for copying to clipboard, from where it can be inserted in another application e.g. with \"Ctrl/Strg + v\" or \"right mouse-click + paste\" in notepad\n\
  F4: for switching off/on the application\n\n\n\n\
